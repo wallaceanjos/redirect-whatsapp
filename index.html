@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Base de Redirect Para Link de Whatsapp</h1>
+    <h3>Remover o Set TimeOut para redirect instantâneos</h3>
+    <!-- 
+      |     URL    |  CELULAR  | MENSAGEM |
+      https://wa.me/55212220081?text=Link
+    -->
+    <script>
+      let delayms = 3000;
+      setTimeout(function () {
+        var urls = new Array();
+        urls[0] = 'https://wa.me/55212220081'; // linkWpp1
+        urls[1] = 'https://wa.me/55212220081'; // linkWpp1
+        urls[2] = 'https://wa.me/55212220081'; // linkWpp1
+        var random = Math.floor(Math.random() * urls.length);
+        window.location = urls[random];
+      }, delayms);
+    </script>
+
+</body>
+</html>
